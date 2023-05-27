@@ -1,1 +1,30 @@
 // Código de Nav acá
+.containerNav{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-content: center;
+    .flex(column,center,center,center);
+    // align-items: center;
+    background-color: @nav-bg;
+    border: @nav-border;    
+    color: @header-font-color;
+
+}
+.title {
+padding: 0.2em;
+}
+nav ul{
+    // display: flex;
+    // flex-direction: row;
+    // align-items:center;
+    // justify-content:space-between;
+    // align-items: center;
+    .flex(row,center,space-around,center);
+    gap: 2em;;
+    .listItem{
+        padding-bottom: 0.8em;
+
+
+    }
+}

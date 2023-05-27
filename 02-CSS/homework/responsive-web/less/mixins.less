@@ -1,1 +1,25 @@
 // Mixins acá
+.flex (@direction,@align,@justify,@align-items){
+    display: flex;
+    flex-direction: @direction;
+    align-content: @align;
+    justify-content: @justify;
+    align-items: @align-items;
+}
+
+.img-mix(@width,@height,@border){
+    width: @width;
+    height: @height;
+    border-radius: @border;
+}
+
+.btn-mix(@width,@height,@font-size,@border-radius,@padding){
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+    border-radius: @border-radius;
+    padding: @padding;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+
+}
