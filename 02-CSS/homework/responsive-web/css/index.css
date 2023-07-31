@@ -196,7 +196,9 @@ footer {
 }
 .home .intro img {
   border-radius: 1em;
-  margin: 0.5em;
+  border: solid chocolate 2px;
+  margin: 0.2em 0.5em;
+  max-width: 98%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -263,4 +265,41 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .intro img {
+    width: calc(100vw - 38px);
+    margin: 1.2em 1.8em;
+  }
+  .home .music-images .auricular {
+    width: calc(100vw - 28px);
+    align-items: center;
+    border-radius: 2em;
+  }
+  .home .actual {
+    flex-direction: column-reverse;
+    padding: 5em 0em 5 em 1.5em;
+  }
+  .home .actual .actual-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home .actual .actual-text .btn {
+    width: calc(90vw - 18px);
+    padding: 1.2em;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .home .actual .actual-img {
+    width: calc(95vw - 18px);
+    margin-left: 0;
+  }
+  .home .tecnologias,
+  .home .tecnologia {
+    display: none;
+  }
+  .home .tecnologias,
+  .home .ondas {
+    display: none;
+  }
 }
